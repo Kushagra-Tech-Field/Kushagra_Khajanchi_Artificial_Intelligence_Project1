@@ -1,0 +1,33 @@
+## Business Recommendations
+
+Based on the final churn prediction models and feature importance analysis, the following actionable recommendations are proposed for ConnectTel’s retention strategy:
+
+### 1. Target Month-to-Month Contract Customers
+Customers on month-to-month contracts consistently showed the highest churn risk across all models.
+**Recommendation:**  
+Prioritize these customers for retention campaigns by offering incentives such as discounted upgrades to annual or two-year contracts, especially within the first year of service.
+
+### 2. Focus on Early-Tenure Customers
+Shorter customer tenure was one of the strongest predictors of churn.
+**Recommendation:**  
+Implement early-stage engagement programs, including proactive onboarding support, service quality check-ins, and personalized communication during the first 3–6 months.
+
+### 3. Address High Cost-to-Tenure Imbalance
+Customers with high charges relative to their tenure were significantly more likely to churn.
+**Recommendation:**  
+Introduce targeted pricing adjustments, bundled plans, or loyalty credits for high-paying customers early in their lifecycle to improve perceived value.
+
+### 4. Increase Adoption of Value-Added Services
+Customers without premium support, security, or bundled services showed higher churn probability.
+**Recommendation:**  
+Promote value-added services such as technical support and online security through limited-time trials or bundled discounts to increase customer stickiness.
+
+### 5. Prioritize Recall in Retention Strategy
+Model evaluation showed that missing churn-prone customers (false negatives) has a higher business cost than contacting some non-churning customers.
+**Recommendation:**  
+Retention teams should prioritize recall over precision when using the churn model, accepting limited outreach inefficiency to minimize lost revenue from undetected churn.
+
+### 6. Deploy an Interpretable Model for Business Trust
+Although gradient boosting models achieved marginally higher performance, Logistic Regression provided comparable AUC-ROC with greater interpretability.
+**Recommendation:**  
+Deploy Logistic Regression in production to ensure transparency, easier monitoring, and clearer communication of churn drivers to business stakeholders.
